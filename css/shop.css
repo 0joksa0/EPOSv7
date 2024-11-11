@@ -11,19 +11,11 @@ main {
     color: #555;
 }
 
-header nav:first-child {
-    display: none;
-}
-
 header .menu-icon {
     display: block;
 }
 
 .shop-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
     padding: 20px;
 }
 
@@ -32,14 +24,8 @@ header .menu-icon {
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
 }
 
-.shop-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
 
 .product-image {
     width: 100%;
@@ -66,15 +52,4 @@ header .menu-icon {
 
 .view-button:hover {
     background-color: #393E46;
-}
-
-
-@media screen and (max-width : 500px) {
-    header nav ul {
-        display: flex;
-    }
-
-    header .menu-icon {
-        display: block;
-    }
 }

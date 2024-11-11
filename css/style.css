@@ -8,23 +8,11 @@
 
 
 header {
-  height: 10vh;
   padding: 0 1em;
   position: sticky;
   top: 0;
   left: 0;
   background-color: #222831;
-}
-
-header nav {
-  height: inherit;
-  display: flex;
-  align-items: center;
-
-}
-
-header .menu-icon{
-  display: none;
 }
 
 .menu-icon {
@@ -40,14 +28,6 @@ header .menu-icon{
   color: #393E46;
 }
 
-header nav ul {
-  flex: 1;
-  height: inherit;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
 
 header nav ul a {
   display: inline-block;
@@ -76,81 +56,4 @@ footer {
 
 footer p {
   margin: 0;
-}
-
-.modal {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: auto;
-  transition: all 1s allow-discrete;
-  border: 0;
-  background-color: #222831; 
-  padding: 0 1em;
-
-}
-
-.modal[open] {
-  animation: slide-in 1s forwards;
-
-
-}
-
-.modal-content {
-  height: inherit;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.modal-content form {
-  height: 10vh;
-  align-self: flex-start;
-
-}
-.modal-content ul{
-  flex: 1;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-
-}
-.modal-content ul li a{
-  text-decoration: none;
-  color: #00ADB5;
-  padding: 0.5em 1em;
-  border-radius: 15px;
-  font-size: 2em;
-  font-weight: bold;
-}
-.modal-content ul li a:hover{
-  color: #393E46;
-}
-
-@keyframes slide-in {
-  from {
-    top: -100vw;
-  }
-
-  to {
-    top: 0;
-  }
-
-}
-
-
-@media screen and (max-width : 500px) {
-  header nav ul {
-    display: none;
-  }
-
-  header .menu-icon {
-    display: block;
-  }
 }
