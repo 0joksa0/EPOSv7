@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <button onclick="burger.show()" class="menu-icon">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Contact</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="product-image-container">
+                <img src="img/shopItem1.webp" alt="Advanced Robotic Arm Part" class="product-image">
+            </div>
+
+            <div class="product-details">
+                <h2>Advanced Robotic Arm Part</h2>
+                <p>This advanced robotic arm part is designed for precision and durability, perfect for robotics enthusiasts and professionals. Made with high-quality materials to ensure reliability in complex projects.</p>
+                <p><strong>Price:</strong> $299.99</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </section>
+    </main>
+    
+  <footer>
+    <p>&copy; 2024 Robotics Shop | All Rights Reserved</p>
+  </footer>
+
+  <!-- modal za burger menu  -->
+  <dialog class="modal" id="burger">
+    <div class="modal-content">
+      <form method="dialog">
+        <button class="menu-icon">✖</button>
+      </form>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </div>
+  </dialog>
+</body>
+</html>

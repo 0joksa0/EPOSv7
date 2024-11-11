@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <button onclick="burger.show()" class="menu-icon">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Contact</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Make an reclamation</h2><form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="1" required>
+            
+                <label for="date">Purchase Date</label>
+                <input type="date" id="date" name="date" required>
+            
+                <label for="range">Satisfaction Level</label>
+                <input type="range" id="range" name="range" min="0" max="10">
+            
+                <label for="file">Upload File (photo of an broken item)</label>
+                <input type="file" id="file" name="file">
+            
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <label for="dropdown"></label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">New product</option>
+                    <option value="option2">Cash return</option>
+                </select>
+            
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-email" name="contact-method" value="email">
+                    <label for="contact-phone">Phone</label>
+                    <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                </fieldset>
+        
+            
+                <button type="submit">Send Reclamation</button>
+            </form>
+            
+        </section>
+    </main>
+    
+  <footer>
+    <p>&copy; 2024 Robotics Shop | All Rights Reserved</p>
+  </footer>
+
+  <!-- modal za burger menu  -->
+  <dialog class="modal" id="burger">
+    <div class="modal-content">
+      <form method="dialog">
+        <button class="menu-icon">✖</button>
+      </form>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </div>
+  </dialog>
+</body>
+</html>

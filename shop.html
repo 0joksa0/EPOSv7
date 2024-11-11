@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <button onclick="burger.show()" class="menu-icon">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="form.html">Contact</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <button onclick="burger.show()" class="menu-icon">☰</button>
+        <ul>
+            <li><a href="#parts">Parts</a></li>
+            <li><a href="#robots">Robots</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section id="parts" class="shop-section">
+            <h2>Parts</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <img src="img/shopItem1.webp" alt="Product Image 1" class="product-image">
+                    <h3 class="product-name">Precision Motor Module</h3>
+                    <a href="product.html" class="view-button">View Product</a>
+                </div>
+                <div class="shop-item">
+                    <img src="img/shopItem1.webp" alt="Product Image 1" class="product-image">
+                    <h3 class="product-name">Precision Motor Module</h3>
+                    <a href="product.html" class="view-button">View Product</a>
+                </div>
+                <div class="shop-item">
+                    <img src="img/shopItem1.webp" alt="Product Image 1" class="product-image">
+                    <h3 class="product-name">Precision Motor Module</h3>
+                    <a href="product.html" class="view-button">View Product</a>
+                </div>
+                <div class="shop-item">
+                    <img src="img/shopItem1.webp" alt="Product Image 1" class="product-image">
+                    <h3 class="product-name">Precision Motor Module</h3>
+                    <a href="product.html" class="view-button">View Product</a>
+                </div>
+            </div>
+        </section>
+    
+        <section id="robots" class="shop-section">
+            <h2>Robots</h2>
+            <!-- Prazna sekcija za robote -->
+        </section>
+    
+        <section id="accessories" class="shop-section">
+            <h2>Accessories</h2>
+            <!-- Prazna sekcija za dodatke -->
+        </section>
+    </main>
+    
+  <footer>
+    <p>&copy; 2024 Robotics Shop | All Rights Reserved</p>
+  </footer>
+
+  <!-- modal za burger menu  -->
+  <dialog class="modal" id="burger">
+    <div class="modal-content">
+      <form method="dialog">
+        <button class="menu-icon">✖</button>
+      </form>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </div>
+  </dialog>
+</body>
+</html>
